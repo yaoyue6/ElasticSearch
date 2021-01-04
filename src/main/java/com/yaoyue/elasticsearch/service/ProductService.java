@@ -73,7 +73,6 @@ public class ProductService {
         searchRequestBuilder.from((pageNo - 1) * pageSize);
         searchRequestBuilder.size(pageSize);
 
-
         // 设置高亮
         HighlightBuilder highlightBuilder = new HighlightBuilder();
         highlightBuilder.field("title");
